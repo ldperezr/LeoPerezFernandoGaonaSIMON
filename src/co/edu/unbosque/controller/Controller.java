@@ -91,7 +91,7 @@ public class Controller implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-	 if (i < 4) {
+
 		if (e.getActionCommand().equals(gui.getPanelInferior().TERMINAR)) {
 			tester();
 			gui.Mostrar("Numero Correcto\n" + num);
@@ -119,10 +119,7 @@ public class Controller implements ActionListener {
 			i++;
 
 		}
-	 }else {
-		 gui.Mostrar("Te pasaste de numeros necesarios, vuelve a intentarlo");
-		 System.exit(0);
-	 }
+	 
 
 	}
 	
